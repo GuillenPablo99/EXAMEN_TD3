@@ -22,7 +22,7 @@ app.use('/api/prestamos', prestamosRoutes);
 // Ruta de bienvenida
 app.get('/', (req, res) => {
     res.json({ 
-        message: '📚 API de Biblioteca Municipal de Tuxtla Gutiérrez',
+        message: 'API de Biblioteca Municipal de Tuxtla Gutiérrez',
         version: '1.0.0',
         endpoints: {
             usuarios: '/api/usuarios',
@@ -53,7 +53,7 @@ app.use((error, req, res, next) => {
 
 // Iniciar servidor
 app.listen(PORT, async () => {
-    console.log(`🚀 Servidor ejecutándose en puerto ${PORT}`);
+    console.log(` Servidor ejecutándose en puerto ${PORT}`);
     await testConnection();
 });
 
